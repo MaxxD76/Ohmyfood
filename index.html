@@ -4,22 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ohmyfood</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
-  <header></header>
+  <header class="header">
+    <a class="header__home" href="index.html">
+      <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg" alt="Ohmyfood">
+    </a>
+  </header>
 
   <main>
-    <ul>
-      <li><a href="restaurants/la-palette-du-gout.html">La palette du goût</a></li>
-      <li><a href="restaurants/la-note-enchantee.html">La note enchantée</a></li>
-      <li><a href="restaurants/a-la-francaise.html">À la française</a></li>
-      <li><a href="restaurants/le-delice-des-sens.html">Le délice des sens</a></li>
-    </ul>
-  </main>
 
-  <footer></footer>
+    <p class="location">
+      <i class="fa-solid fa-location-dot"></i>
+      Paris, Belleville
+    </p>
+
+    <section class="hero">
+      <h1 class="hero__title">Réservez le menu qui vous convient</h1>
+      <p class="hero__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <a class="btn" href="#">Explorer nos restaurants</a>
+    </section>
+
+  </main>
 
 </body>
 </html>
