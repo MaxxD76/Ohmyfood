@@ -14,7 +14,7 @@
 
   <header class="header">
     <a class="header__home" href="index.html">
-      <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg" alt="Ohmyfood">
+      <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg">
     </a>
   </header>
 
@@ -31,7 +31,97 @@
       <a class="btn" href="#">Explorer nos restaurants</a>
     </section>
 
+    <section class="fonctionnement">
+      <h2 class="fonctionnement__title">Fonctionnement</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__number">1</span>
+          <i class="step__icon fa-solid fa-mobile-screen-button"></i>
+          Choisissez un restaurant
+        </li>
+        <li class="step">
+          <span class="step__number">2</span>
+          <i class="step__icon fa-solid fa-list-ul"></i>
+          Composez votre menu
+        </li>
+        <li class="step">
+          <span class="step__number">3</span>
+          <i class="step__icon step__icon--highlight fa-solid fa-store"></i>
+          Dégustez au restaurant
+        </li>
+      </ol>
+    </section>
+
+    <section class="restaurants">
+      <h2 class="restaurants__title">Restaurants</h2>
+      <ul class="restaurants__list">
+
+        <li class="restaurant">
+          <span class="restaurant__badge">Nouveau</span>
+          <a class="restaurant__link" href="restaurants/la-palette-du-gout.html">
+            <img class="restaurant__image"
+                 src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+            <div class="restaurant__text">
+              <h3 class="restaurant__name">La palette du goût</h3>
+              <p class="restaurant__place">Ménilmontant</p>
+            </div>
+          </a>
+          <i class="restaurant__heart fa-regular fa-heart"></i>
+        </li>
+
+        <li class="restaurant">
+          <span class="restaurant__badge">Nouveau</span>
+          <a class="restaurant__link" href="restaurants/la-note-enchantee.html">
+            <img class="restaurant__image"
+                 src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+            <div class="restaurant__text">
+              <h3 class="restaurant__name">La note enchantée</h3>
+              <p class="restaurant__place">Charonne</p>
+            </div>
+          </a>
+          <i class="restaurant__heart fa-regular fa-heart"></i>
+        </li>
+
+        <li class="restaurant">
+          <a class="restaurant__link" href="restaurants/a-la-francaise.html">
+            <img class="restaurant__image"
+                 src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+            <div class="restaurant__text">
+              <h3 class="restaurant__name">À la française</h3>
+              <p class="restaurant__place">Cité Rouge</p>
+            </div>
+          </a>
+          <i class="restaurant__heart fa-regular fa-heart"></i>
+        </li>
+
+        <li class="restaurant">
+          <a class="restaurant__link" href="restaurants/le-delice-des-sens.html">
+            <img class="restaurant__image"
+                 src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+            <div class="restaurant__text">
+              <h3 class="restaurant__name">Le délice des sens</h3>
+              <p class="restaurant__place">Folie-Méricourt</p>
+            </div>
+          </a>
+          <i class="restaurant__heart fa-regular fa-heart"></i>
+        </li>
+
+      </ul>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    <p class="footer__logo">
+      <a href="index.html">ohmyfood</a>
+    </p>
+    <nav class="footer__nav">
+      <a class="footer__link" href="#"><i class="footer__icon fa-solid fa-utensils"></i>Proposer un restaurant</a>
+      <a class="footer__link" href="#"><i class="footer__icon fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+      <a class="footer__link footer__link--plain" href="#">Mentions légales</a>
+      <a class="footer__link footer__link--plain" href="#">Contact</a>
+    </nav>
+  </footer>
 
 </body>
 </html>
