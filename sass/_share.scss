@@ -1,0 +1,34 @@
+// =============================================================
+// Variables et mixins partagés par toutes les pages
+// =============================================================
+
+// ---------------------------------------------------- Charte graphique
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$color-tertiary-dark: #008766;
+
+$color-text: #101010;
+$color-text-muted: #7e7e7e;
+
+$color-white: #ffffff;
+$color-bg-light: #f6f6f6;
+$color-bg-grey: #eaeaea;
+$color-footer: #353535;
+
+// ---------------------------------------------------- Le dégradé des boutons
+$gradient-primary: linear-gradient(193deg, $color-secondary 0%, $color-primary 100%);
+
+// ---------------------------------------------------- Polices
+$font-title: "Shrikhand", Georgia, serif;
+$font-body: "Roboto", "Helvetica Neue", Arial, sans-serif;
+
+// ---------------------------------------------------- Dimensions
+$content-width: 1080px;
+
+// ---------------------------------------------------- Mixins
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}

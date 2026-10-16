@@ -4,19 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La palette du goût - Ohmyfood</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 
-  <header>
-    <a href="../index.html">Retour</a>
+  <header class="header">
+    <a class="header__back" href="../index.html">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <a class="header__home" href="../index.html">
+      <img class="header__logo" src="../assets/images/logo/ohmyfood@2x.svg">
+    </a>
   </header>
 
   <main>
-    <h1>La palette du goût</h1>
+    <img class="cover" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+
+    <div class="menu">
+      <div class="menu__inner">
+
+        <div class="menu__head">
+          <h1 class="menu__title">La palette du goût</h1>
+          <i class="menu__heart fa-regular fa-heart"></i>
+        </div>
+
+        <section class="course course--entrees">
+          <h2 class="course__title">Entrées</h2>
+          <ul class="course__list">
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Fricassée d'escargots</h3>
+                <p class="dish__desc">Au piment d'Espelette</p>
+              </div>
+              <p class="dish__price">25€</p>
+            </li>
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Foie gras de canard mi-cuit</h3>
+                <p class="dish__desc">Et ses copeaux de truffe noire</p>
+              </div>
+              <p class="dish__price">35€</p>
+            </li>
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Œuf au plat</h3>
+                <p class="dish__desc">Assaisonné à la truffe sur lit de caviar</p>
+              </div>
+              <p class="dish__price">20€</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="course course--plats">
+          <h2 class="course__title">Plats</h2>
+          <ul class="course__list">
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Filet de bœuf aux herbes</h3>
+                <p class="dish__desc">Accompagné de sa ribambelle de légumes</p>
+              </div>
+              <p class="dish__price">40€</p>
+            </li>
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Parmentier de queue de bœuf</h3>
+                <p class="dish__desc">À la truffe noire sur sa purée de panais</p>
+              </div>
+              <p class="dish__price">35€</p>
+            </li>
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Filet de turbot</h3>
+                <p class="dish__desc">Aux agrumes</p>
+              </div>
+              <p class="dish__price">44€</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="course course--desserts">
+          <h2 class="course__title">Desserts</h2>
+          <ul class="course__list">
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Paris-Brest</h3>
+                <p class="dish__desc">Revisité</p>
+              </div>
+              <p class="dish__price">18€</p>
+            </li>
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Macaron au chocolat d'exception</h3>
+                <p class="dish__desc">Et glace à la vanille de Madagascar</p>
+              </div>
+              <p class="dish__price">22€</p>
+            </li>
+            <li class="dish">
+              <div class="dish__body">
+                <h3 class="dish__name">Mousse au chocolat</h3>
+                <p class="dish__desc">Au piment d'Espelette et à la truffe noire</p>
+              </div>
+              <p class="dish__price">23€</p>
+            </li>
+          </ul>
+        </section>
+
+        <div class="menu__order">
+          <button class="btn" type="button">Commander</button>
+        </div>
+
+      </div>
+    </div>
   </main>
 
-  <footer></footer>
+  <footer class="footer">
+    <p class="footer__logo">
+      <a href="../index.html">ohmyfood</a>
+    </p>
+    <nav class="footer__nav">
+      <a class="footer__link" href="#"><i class="footer__icon fa-solid fa-utensils"></i>Proposer un restaurant</a>
+      <a class="footer__link" href="#"><i class="footer__icon fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+      <a class="footer__link footer__link--plain" href="#">Mentions légales</a>
+      <a class="footer__link footer__link--plain" href="#">Contact</a>
+    </nav>
+  </footer>
 
 </body>
 </html>
