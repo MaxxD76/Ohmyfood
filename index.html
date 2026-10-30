@@ -12,6 +12,11 @@
 </head>
 <body>
 
+  <div class="loader">
+    <p class="loader__logo">ohmyfood</p>
+    <span class="loader__spinner"></span>
+  </div>
+
   <header class="header">
     <a class="header__home" href="index.html">
       <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg">
@@ -46,7 +51,7 @@
         </li>
         <li class="step">
           <span class="step__number">3</span>
-          <i class="step__icon step__icon--highlight fa-solid fa-store"></i>
+          <i class="step__icon fa-solid fa-store"></i>
           Dégustez au restaurant
         </li>
       </ol>
@@ -66,7 +71,11 @@
               <p class="restaurant__place">Ménilmontant</p>
             </div>
           </a>
-          <i class="restaurant__heart fa-regular fa-heart"></i>
+          <label class="heart restaurant__heart">
+            <input class="heart__input" type="checkbox">
+            <i class="heart__icon heart__icon--outline fa-regular fa-heart"></i>
+            <i class="heart__icon heart__icon--solid fa-solid fa-heart"></i>
+          </label>
         </li>
 
         <li class="restaurant">
@@ -79,7 +88,11 @@
               <p class="restaurant__place">Charonne</p>
             </div>
           </a>
-          <i class="restaurant__heart fa-regular fa-heart"></i>
+          <label class="heart restaurant__heart">
+            <input class="heart__input" type="checkbox">
+            <i class="heart__icon heart__icon--outline fa-regular fa-heart"></i>
+            <i class="heart__icon heart__icon--solid fa-solid fa-heart"></i>
+          </label>
         </li>
 
         <li class="restaurant">
@@ -91,7 +104,11 @@
               <p class="restaurant__place">Cité Rouge</p>
             </div>
           </a>
-          <i class="restaurant__heart fa-regular fa-heart"></i>
+          <label class="heart restaurant__heart">
+            <input class="heart__input" type="checkbox">
+            <i class="heart__icon heart__icon--outline fa-regular fa-heart"></i>
+            <i class="heart__icon heart__icon--solid fa-solid fa-heart"></i>
+          </label>
         </li>
 
         <li class="restaurant">
@@ -103,7 +120,11 @@
               <p class="restaurant__place">Folie-Méricourt</p>
             </div>
           </a>
-          <i class="restaurant__heart fa-regular fa-heart"></i>
+          <label class="heart restaurant__heart">
+            <input class="heart__input" type="checkbox">
+            <i class="heart__icon heart__icon--outline fa-regular fa-heart"></i>
+            <i class="heart__icon heart__icon--solid fa-solid fa-heart"></i>
+          </label>
         </li>
 
       </ul>
