@@ -139,6 +139,7 @@ button {
     justify-content: flex-start;
     align-items: flex-end;
     padding: 30px 25px;
+    gap: 80px;
 
     &__nav {
       flex-direction: row;
@@ -191,12 +192,10 @@ button {
     }
   }
 
-  // Au clic
   &__input:checked ~ &__icon--solid {
     clip-path: inset(0 0 0 0);
   }
 
-  // Au survol
   @media (hover: hover) {
     &:hover &__icon--solid {
       clip-path: inset(0 0 0 0);

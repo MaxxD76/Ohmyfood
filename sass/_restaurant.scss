@@ -23,6 +23,12 @@
   border-radius: 40px 40px 0 0;
   background-color: $color-bg-light;
 
+
+  @include desktop {
+    max-width: $content-width;
+    margin-inline: auto;
+  }
+
   &__inner {
     @include desktop {
       max-width: 634px;
@@ -130,5 +136,20 @@
     padding: 12px 15px;
     font-size: 15px;
     font-weight: 700;
+  }
+
+  &__check {
+    flex: 0 0 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background-color: $color-tertiary;
+    color: $color-white;
+    font-size: 20px;
+    transition: flex-basis 0.4s ease;
+  }
+
+  &:hover &__check {
+    flex-basis: 59px;
   }
 }
